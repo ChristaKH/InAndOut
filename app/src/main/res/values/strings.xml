@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">InAndOut</string>
+    <string name="orderMenuTitle">Place an Order</string>
+    <string name="doubleDouble">Double Double $3.60</string>
+    <string name="cheeseBurger">Cheeseburger $2.15</string>
+    <string name="frenchFries">French Fries $1.65</string>
 </resources>
