@@ -10,4 +10,6 @@
     <string name="medium">Medium $1.55</string>
     <string name="large">Large $1.75</string>
     <string name="placeOrderButton">Place Order</string>
+    <string name="sampleText">Sample Text</string>
+    <string name="startNewOrder">START NEW ORDER</string>
 </resources>
