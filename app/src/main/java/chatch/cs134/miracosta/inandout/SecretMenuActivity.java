@@ -32,7 +32,7 @@ public class SecretMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_secret_menu);
 
         //Connect variables to corresponding views
-        doubleMeatEditText = findViewById(R.id.doubleDoubleEditText);
+        doubleMeatEditText = findViewById(R.id.doubleMeatEditText);
         threeByThreeEditText = findViewById(R.id.threeByThreeEditText);
         fourByFourEditText = findViewById(R.id.fourByFourEditText);
         grilledCheeseEditText = findViewById(R.id.grilledCheeseEditText);
@@ -48,28 +48,46 @@ public class SecretMenuActivity extends AppCompatActivity {
     }
 
     public void placeOrder(View v){
+        int itemTotal = 0;
+
         // Update order
         if(! doubleMeatEditText.getText().toString().equals("")){
             order.setDoubleMeat(Integer.parseInt(doubleMeatEditText.getText().toString()));
+            itemTotal += Integer.parseInt(doubleMeatEditText.getText().toString());
         }
         if(! threeByThreeEditText.getText().toString().equals("")){
             order.setThreeByThree(Integer.parseInt(threeByThreeEditText.getText().toString()));
+            itemTotal += Integer.parseInt(threeByThreeEditText.getText().toString());
         }
         if(! fourByFourEditText.getText().toString().equals("")){
             order.setFourByFour(Integer.parseInt(fourByFourEditText.getText().toString()));
+            itemTotal += Integer.parseInt(fourByFourEditText.getText().toString());
         }
         if(! grilledCheeseEditText.getText().toString().equals("")){
             order.setGrilledCheese(Integer.parseInt(grilledCheeseEditText.getText().toString()));
+            itemTotal += Integer.parseInt(grilledCheeseEditText.getText().toString());
         }
         if(! proteinStyleEditText.getText().toString().equals("")){
             order.setProteinStyle(Integer.parseInt(proteinStyleEditText.getText().toString()));
+            itemTotal += Integer.parseInt(proteinStyleEditText.getText().toString());
         }
         if(! animalStyleEditText.getText().toString().equals("")){
             order.setAnimalStyle(Integer.parseInt(animalStyleEditText.getText().toString()));
+            itemTotal += Integer.parseInt(animalStyleEditText.getText().toString());
         }
 
         // Send intent
         Intent orderIntent = new Intent(this, OrderActivity.class);
-        //orderIntent.putExtra("Total", )
+        orderIntent.putExtra("Total", order.calculateTotal() );
+        orderIntent.putExtra("ItemTotal", itemTotal);
+        orderIntent.putExtra("Subtotal", order.calculateSubtotal());
+        orderIntent.putExtra("Tax", order.calculateTax());
+
+        startActivity(orderIntent);
+    }
+
+    public void backButton(View v){
+        Intent mainIntent = new Intent(this, MainActivity.class);
+        startActivity(mainIntent);
     }
 }
