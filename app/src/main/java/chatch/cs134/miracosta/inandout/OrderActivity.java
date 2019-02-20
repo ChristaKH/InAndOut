@@ -32,5 +32,8 @@ public class OrderActivity extends AppCompatActivity {
         // Take info from intent: order total, number of items in order, subtotal,
         // and tax
         double orderTotal = orderIntent.getDoubleExtra("Total", 0.00);
+        int itemsOrdered = orderIntent.getIntExtra("ItemTotal", 0);
+        double subtotal = orderIntent.getDoubleExtra("Subtotal", 0.00);
+        double tax = orderIntent.getDoubleExtra("Tax", 0.00);
     }
 }
