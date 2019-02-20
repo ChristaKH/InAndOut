@@ -1,3 +1,9 @@
+/**
+ * This is the java file the corresponds to the main activity
+ *
+ * @author: Christa Hatch
+ * @version: 1.0
+ */
 package chatch.cs134.miracosta.inandout;
 
 import android.content.Intent;
