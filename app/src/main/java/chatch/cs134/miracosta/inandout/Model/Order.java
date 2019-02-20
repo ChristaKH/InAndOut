@@ -1,13 +1,31 @@
+/***
+ * This app takes your order at In-N-Out and gives you the total
+ * including tax
+ *
+ * @author: Christa Hatch
+ * @version: 1.0
+ */
 package chatch.cs134.miracosta.inandout.Model;
 
 public class Order {
-    private int mDoubleDouble;
-    private int mCheeseburger;
-    private int mFrenchFries;
-    private int mShakes;
-    private int mSmall;
-    private int mMedium;
-    private int mLarge;
+    // Instance variables
+    private int mDoubleDouble;  // Number of double doubles
+    private int mCheeseburger; // Number of cheeseburgers
+    private int mFrenchFries; // Number of french fries
+    private int mShakes;    // Number of shakes
+    private int mSmallDrinks;   // Number of small drinks
+    private int mMediumDrinks;  // Number of medium drinks
+    private int mLargeDrinks;   // Number of large drinks
+
+    // Constants
+    final double PRICE_CHEESEBURGER = 2.15; // Price of a cheeseburger
+    final double PRICE_DOUBLE_DOUBLE = 3.60; // Price of a double double
+    final double PRICE_FRENCH_FRIES = 1.65; // Price of french fries
+    final double PRICE_LARGE_DRINK = 1.75;  // Price of a large drink
+    final double PRICE_MEDIUM_DRINK = 1.55; // Price of medium drink
+    final double PRICE_SMALL_DRINK = 1.45;  // Price of small drink
+    final double PRICE_SHAKE = 2.20;    // Price of a shake
+    final double TAX_RATE = 0.08;   // Tax rate (8%)
 
     public int getDoubleDouble() {
         return mDoubleDouble;
@@ -41,40 +59,27 @@ public class Order {
         mShakes = shakes;
     }
 
-    public int getSmall() {
-        return mSmall;
+    public int getSmallDrinks() {
+        return mSmallDrinks;
     }
 
-    public void setSmall(int small) {
-        mSmall = small;
+    public void setSmallDrinks(int smallDrinks) {
+        mSmallDrinks = smallDrinks;
     }
 
-    public int getMedium() {
-        return mMedium;
+    public int getMediumDrinks() {
+        return mMediumDrinks;
     }
 
-    public void setMedium(int medium) {
-        mMedium = medium;
+    public void setMediumDrinks(int mediumDrinks) {
+        mMediumDrinks = mediumDrinks;
     }
 
-    public int getLarge() {
-        return mLarge;
+    public int getLargeDrinks() {
+        return mLargeDrinks;
     }
 
-    public void setLarge(int large) {
-        mLarge = large;
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "mDoubleDouble=" + mDoubleDouble +
-                ", mCheeseburger=" + mCheeseburger +
-                ", mFrenchFries=" + mFrenchFries +
-                ", mShakes=" + mShakes +
-                ", mSmall=" + mSmall +
-                ", mMedium=" + mMedium +
-                ", mLarge=" + mLarge +
-                '}';
+    public void setLargeDrinks(int largeDrinks) {
+        mLargeDrinks = largeDrinks;
     }
 }
