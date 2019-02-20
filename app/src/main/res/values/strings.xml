@@ -4,4 +4,10 @@
     <string name="doubleDouble">Double Double $3.60</string>
     <string name="cheeseBurger">Cheeseburger $2.15</string>
     <string name="frenchFries">French Fries $1.65</string>
+    <string name="shakes">Shakes $2.20</string>
+    <string name="fountainDrinks">Fountain Drinks (pick a size)</string>
+    <string name="small">Small $1.45</string>
+    <string name="medium">Medium $1.55</string>
+    <string name="large">Large $1.75</string>
+    <string name="placeOrderButton">Place Order</string>
 </resources>
