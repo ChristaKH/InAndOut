@@ -7,6 +7,7 @@
 package chatch.cs134.miracosta.inandout;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mediumEditText = findViewById(R.id.mediumEditText);
         largeEditText = findViewById(R.id.largeEditText);
         placeOrderButton = findViewById(R.id.placeOrderButton);
+
         order = new Order();
     }
 
@@ -53,37 +55,38 @@ public class MainActivity extends AppCompatActivity {
         Intent orderIntent = new Intent(this, OrderActivity.class);
         int itemTotals = 0;
 
-        if( doubleDoubleEditText.getText().toString() != ""){
+        if( ! doubleDoubleEditText.getText().toString().equals("")){
                 order.setDoubleDouble(Integer.parseInt(doubleDoubleEditText.getText().toString()));
                 itemTotals += Integer.parseInt(doubleDoubleEditText.getText().toString());
+                System.out.println( itemTotals);
         }
 
-        if(cheeseburgerEditText.getText().toString() != ""){
+        if(! cheeseburgerEditText.getText().toString().equals("")){
             order.setCheeseburger(Integer.parseInt(cheeseburgerEditText.getText().toString()));
             itemTotals += Integer.parseInt(cheeseburgerEditText.getText().toString());
         }
 
-        if(frenchFriesEditText.getText().toString() != ""){
+        if(! frenchFriesEditText.getText().toString().equals("")){
             order.setFrenchFries(Integer.parseInt(frenchFriesEditText.getText().toString()));
             itemTotals += Integer.parseInt(frenchFriesEditText.getText().toString());
         }
 
-        if(shakesEditText.getText().toString() != ""){
+        if(! shakesEditText.getText().toString().equals("")){
             order.setShakes(Integer.parseInt(shakesEditText.getText().toString()));
             itemTotals += Integer.parseInt(shakesEditText.getText().toString());
         }
 
-        if(smallEditText.getText().toString() != ""){
+        if(! smallEditText.getText().toString().equals("")){
             order.setSmallDrinks(Integer.parseInt(smallEditText.getText().toString()));
             itemTotals += Integer.parseInt(smallEditText.getText().toString());
         }
 
-        if(mediumEditText.getText().toString() != ""){
+        if(! mediumEditText.getText().toString().equals("")){
             order.setMediumDrinks(Integer.parseInt(mediumEditText.getText().toString()));
             itemTotals += Integer.parseInt(mediumEditText.getText().toString());
         }
 
-        if(largeEditText.getText().toString() != ""){
+        if(! largeEditText.getText().toString().equals("")){
             order.setLargeDrinks(Integer.parseInt(largeEditText.getText().toString()));
             itemTotals += Integer.parseInt(largeEditText.getText().toString());
         }

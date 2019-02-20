@@ -149,4 +149,61 @@ public class SecretOrder {
     public void setAnimalStyle(int animalStyle) {
         mAnimalStyle = animalStyle;
     }
+
+    /**
+     * Calculates and returns the subtotal of the order
+     * @return  subtotal
+     */
+    public double calculateSubtotal(){
+        double subtotal = 0.0;
+        subtotal += mDoubleMeat * sPRICE_DOUBLE_MEAT;
+        subtotal += mThreeByThree * sPRICE_THREE_BY_THREE;
+        subtotal += mFourByFour * sPRICE_FOUR_BY_FOUR;
+        subtotal += mGrilledCheese * sPRICE_GRILLED_CHEESE;
+        subtotal += mProteinStyle * sPRICE_PROTEIN_STYLE;
+        subtotal += mAnimalStyle * sPRICE_ANIMAL_STYLE;
+
+        return subtotal;
+    }
+
+    /**
+     * Calculates and returns the tax of the order based on the subtotal
+     * and the 8% tax
+     * @return
+     */
+    public double calculateTax(){
+        double tax = 0;
+        tax = this.calculateSubtotal() * .08;
+
+        return tax;
+    }
+
+    /**
+     * Calculates and returns the total which is comprised or the order's
+     * subtotal and tax
+     * @return  total
+     */
+    public double calculateTotal(){
+        double total = 0.0;
+        total += this.calculateSubtotal();
+        total += this.calculateTax();
+
+        return total;
+    }
+
+    /**
+     * Method that returns the string values of the instance variables
+     * @return  String values of instance variables
+     */
+    @Override
+    public String toString() {
+        return "SecretOrder{" +
+                "mDoubleMeat=" + mDoubleMeat +
+                ", mThreeByThree=" + mThreeByThree +
+                ", mFourByFour=" + mFourByFour +
+                ", mGrilledCheese=" + mGrilledCheese +
+                ", mProteinStyle=" + mProteinStyle +
+                ", mAnimalStyle=" + mAnimalStyle +
+                '}';
+    }
 }
