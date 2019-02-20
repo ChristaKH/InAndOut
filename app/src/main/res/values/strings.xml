@@ -12,4 +12,11 @@
     <string name="placeOrderButton">Place Order</string>
     <string name="sampleText">Sample Text</string>
     <string name="startNewOrder">START NEW ORDER</string>
+    <string name="secretOrderTitle">Place Secret Order</string>
+    <string name="doubleMeat">Double Meat</string>
+    <string name="threeByThree">3 X 3</string>
+    <string name="fourByFour">4 X 4</string>
+    <string name="grilledCheese">Grilled Cheese</string>
+    <string name="proteinStyle">Protein Style</string>
+    <string name="animalStyle">Animal Style</string>
 </resources>

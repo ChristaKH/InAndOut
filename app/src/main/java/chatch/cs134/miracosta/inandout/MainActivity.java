@@ -89,4 +89,15 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(orderIntent);
     }
+
+    /**
+     * When the secret menu button is clicked this method pulls up the SecretMenuActivity
+     * No transfer of information is needed
+     * @param v current view
+     */
+    public void secretMenu(View v){
+        // Create an intent to go to the secret menu
+        Intent secretMenuIntent = new Intent(this, SecretMenuActivity.class);
+        startActivity( secretMenuIntent);
+    }
 }
