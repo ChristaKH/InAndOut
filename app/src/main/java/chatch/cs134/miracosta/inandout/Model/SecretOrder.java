@@ -54,5 +54,99 @@ public class SecretOrder {
         mAnimalStyle = 0;
     }
 
+    /**
+     * Returns the number of double meats in the order
+     * @return  mDoubleMeat
+     */
+    public int getDoubleMeat() {
+        return mDoubleMeat;
+    }
 
+    /**
+     * Sets the number of double meats in the order
+     * @param doubleMeat    New number of double meats in the order
+     */
+    public void setDoubleMeat(int doubleMeat) {
+        mDoubleMeat = doubleMeat;
+    }
+
+    /**
+     * Returns the number of 3x3's in the order
+     * @return  mThreeByThree
+     */
+    public int getThreeByThree() {
+        return mThreeByThree;
+    }
+
+    /**
+     * Sets the number of 3x3's in the order
+     * @param threeByThree  New number of 3x3's in the order
+     */
+    public void setThreeByThree(int threeByThree) {
+        mThreeByThree = threeByThree;
+    }
+
+    /**
+     * Returns the number of 4x4's in the order
+     * @return  mFourByFour
+     */
+    public int getFourByFour() {
+        return mFourByFour;
+    }
+
+    /**
+     * Sets the number of 4x4's in the order
+     * @param fourByFour    New number of 4x4's in the order
+     */
+    public void setFourByFour(int fourByFour) {
+        mFourByFour = fourByFour;
+    }
+
+    /**
+     * Returns the number of grilled cheeses in the order
+     * @return  mGrilledCheese
+     */
+    public int getGrilledCheese() {
+        return mGrilledCheese;
+    }
+
+    /**
+     * Sets the number of grilled cheeses in the order
+     * @param grilledCheese New number of grilled cheese in the order
+     */
+    public void setGrilledCheese(int grilledCheese) {
+        mGrilledCheese = grilledCheese;
+    }
+
+    /**
+     * Returns the number of protein style in the order
+     * @return  mProteinStyle
+     */
+    public int getProteinStyle() {
+        return mProteinStyle;
+    }
+
+    /**
+     * Sets the number of protein style in the order
+     * @param proteinStyle  New number of protein style fries in the order
+     */
+    public void setProteinStyle(int proteinStyle) {
+        mProteinStyle = proteinStyle;
+    }
+
+    /**
+     * Return the number of animal style fries in the order
+     * @return  mAnimalStyle
+     */
+    public int getAnimalStyle() {
+        return mAnimalStyle;
+    }
+
+    /**
+     * Sets the number of animal style fries in the order
+     * @param animalStyle   New number of animal style fries in the order
+     */
+    public void setAnimalStyle(int animalStyle) {
+        mAnimalStyle = animalStyle;
+    }
 }
