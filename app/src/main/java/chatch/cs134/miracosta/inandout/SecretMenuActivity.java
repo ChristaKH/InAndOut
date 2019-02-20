@@ -47,6 +47,10 @@ public class SecretMenuActivity extends AppCompatActivity {
         order = new SecretOrder();
     }
 
+    /**
+     * Changes activity to the order summary activity and sends the intent information
+     * @param v Current view
+     */
     public void placeOrder(View v){
         int itemTotal = 0;
 
@@ -86,6 +90,10 @@ public class SecretMenuActivity extends AppCompatActivity {
         startActivity(orderIntent);
     }
 
+    /**
+     * Button that returns to the main activity from the secret menu activity
+     * @param v Current view
+     */
     public void backButton(View v){
         Intent mainIntent = new Intent(this, MainActivity.class);
         startActivity(mainIntent);
