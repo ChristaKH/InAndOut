@@ -28,12 +28,13 @@
 
             <TextView
                 android:id="@+id/orderTotalTextView"
-                android:layout_width="218dp"
+                android:layout_width="299dp"
                 android:layout_height="42dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
+                android:layout_weight="1"
                 android:text="@string/sampleText"
                 android:textSize="24sp"
                 android:textStyle="bold"

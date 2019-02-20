@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InAndOut</string>
+    <string name="orderMenuTitle">주문</string>
+    <string name="doubleDouble">더블 더블 3.60</string>
+    <string name="cheeseBurger">치즈 버거 2.15</string>
+    <string name="frenchFries">감자 튀김 1.65</string>
+    <string name="shakes">흔들림 2.20</string>
+    <string name="fountainDrinks">분수 음료 (크기 선택)</string>
+    <string name="small">작음 1.45</string>
+    <string name="medium">중간 1.55</string>
+    <string name="large">큰 1.75</string>
+    <string name="placeOrderButton">주문하다</string>
+    <string name="sampleText">샘플 텍스트</string>
+    <string name="startNewOrder">새 주문 시작</string>
+    <string name="secretOrderTitle">비밀 주문하다</string>
+    <string name="doubleMeat">육류 2.85</string>
+    <string name="threeByThree">3 X 3 4.45</string>
+    <string name="fourByFour">4 X 4 5.50</string>
+    <string name="grilledCheese">구운 치즈 2.35</string>
+    <string name="proteinStyle">단백질 스타일 3.90</string>
+    <string name="animalStyle">애니 마 스타일 3.40</string>
+</resources>
